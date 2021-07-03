@@ -1,0 +1,30 @@
+.AlertWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.AlertWrapper button {
+    background: transparent;
+    border: none;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+@keyframes leave {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+
+.leaving {
+    animation: leave 0.5s forwards;
+  }
