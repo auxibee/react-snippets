@@ -1,6 +1,7 @@
 .AlertWrapper {
     display: flex;
     flex-direction: row;
+    text-transform: capitalize;
 }
 
 .AlertWrapper button {
