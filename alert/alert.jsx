@@ -1,6 +1,7 @@
 import React from 'react';
 import cn from 'classnames'
 import styles from './alert.module.css'
+import PropTypes from 'prop-types'
 
 const Alert = ({isDefaultShown = false, message, timeout=250 , error, warning}) => {
     const [isDisplayed, setIsDisplayed] = React.useState(isDefaultShown)
@@ -36,6 +37,14 @@ const Alert = ({isDefaultShown = false, message, timeout=250 , error, warning}) 
         </div> }
         </>
      );
+}
+
+Alert.propTypes = {
+    isDefaultShown : PropTypes.bool,
+    message : PropTypes.string.isRequired,
+    error : PropTypes.bool,
+    warning : PropTypes.bool,
+    timeout : PropTypes.number
 }
  
 export default Alert;
