@@ -1,0 +1,13 @@
+.accordionItemWrapper {
+    border: 1px solid rebeccapurple;
+    width: 500px;
+    text-align: center;
+}
+
+.accordionItemWrapper button {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
